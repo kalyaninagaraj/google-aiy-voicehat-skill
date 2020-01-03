@@ -1,4 +1,4 @@
-# <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/solid/cube.svg" card_color="#222222" width="50" height="50" style="vertical-align:bottom"/> Google Aiy Voicehat
+# <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/brands/google.svg" card_color="#222222" width="50" height="50" style="vertical-align:bottom"/> Google Aiy Voicehat
 Enables the button and led on the Google AIY voicehat.
 
 ## About
