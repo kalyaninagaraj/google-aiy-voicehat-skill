@@ -1,14 +1,15 @@
-""" This skill roughly follows the code outline of the
-excellent picroft-google-aiy-voicekit skill by @andlo,
-but uses the gpiozero library (instead of RPi.GPIO) to
-operate the button-led combo connected to the voicehat.
+"""
+This skill roughly follows @andlo's code outline for the
+excellent picroft-google-aiy-voicekit skill, but uses
+the gpiozero library (instead of RPi.GPIO) to operate
+the button-led combo connected to the voicehat.
+
+Also, an extended button press (> 7 seconds) initiates a
+Linux shutdown.
 
 The idea is to test gpiozero's ability to handle switch
 bounce when polling for a button press; RPi.GPIO does
-not do too..
-
-Also, if all goes well, an extended button press
-(> 7 seconds) should initiate a Linux shutdown.
+not do it too well.
 """
 
 from mycroft import MycroftSkill
@@ -51,9 +52,11 @@ class GoogleAIYVoicehat(MycroftSkill):
     def handle_listener_ended(self):
         self.led.off()
 
+    # In truth, this is a not-so-graceful power down.
+    # Emitting message 'system.shutdown' doesn't work on Picroft.
     def graceful_exit(self):
         self.blink()
-        self.log.info('Forcing a linux shutdown by the press of a button ...')
+        self.log.info('Forcing a linux shutdown ...')
         subprocess.call(['sudo', 'shutdown', '-h', 'now'])
 
     def blink(self):
