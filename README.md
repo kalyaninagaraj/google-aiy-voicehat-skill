@@ -12,8 +12,8 @@ Additionally, an extended button press
 (> 7 seconds) forces a Linux shutdown.
 
 The idea is to test gpiozero's ability to handle switch 
-bounce when polling for a button press; RPi.GPIO doesn't 
-register hold times too well. 
+bounce when polling for a button press; in my experience, RPi.GPIO 
+doesn't register hold times too well. 
 
 ## Credits
 kalyaninagaraj
