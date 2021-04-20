@@ -1,4 +1,6 @@
 """
+About
+-----
 This skill roughly follows @andlo's code outline for the
 excellent picroft-google-aiy-voicekit skill, but uses
 the gpiozero library (instead of RPi.GPIO) to operate
@@ -9,7 +11,12 @@ Linux shutdown.
 
 The idea is to test gpiozero's ability to handle switch
 bounce when polling for a button press; RPi.GPIO does
-not do it too well.
+not do it very well.
+
+Author
+------
+Kalyani Nagaraj
+Dec 2019
 """
 
 from mycroft import MycroftSkill
