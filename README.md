@@ -15,8 +15,8 @@ The idea is to test gpiozero's ability to handle switch
 bounce when polling for a button press; in my experience, RPi.GPIO 
 doesn't register hold times too well. 
 
-## Credits
-kalyaninagaraj
+## Credit
+[@kalyaninagaraj](https://github.com/kalyaninagaraj)
 
 ## Category
 **IoT**
