@@ -1,8 +1,8 @@
 # <img src="https://raw.githack.com/FortAwesome/Font-Awesome/master/svgs/brands/google.svg" card_color="#222222" width="50" height="50" style="vertical-align:bottom"/> Google AIY Voicehat
-Enables the button and led on the Google AIY voicehat.
+Enables the button and LED on the Google AIY voicehat.
 
 ## About
-This skill roughly follows @andlo's code outline for the 
+This Mycroft skill roughly follows @andlo's code outline for the 
 excellent picroft-google-aiy-voicekit skill. It provides
 the same functionality but uses the gpiozero library 
 instead of RPi.GPIO to operate the button-led combo 
