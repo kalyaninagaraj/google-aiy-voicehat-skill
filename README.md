@@ -3,9 +3,9 @@ Enables the button and LED on the Google AIY voicehat.
 
 ## About
 This Mycroft skill roughly follows @andlo's code outline for the 
-excellent picroft-google-aiy-voicekit skill. It provides
+excellent [picroft-google-aiy-voicekit](https://github.com/andlo/picroft-google-aiy-voicekit-skill) skill. It provides
 the same functionality but uses the gpiozero library 
-instead of RPi.GPIO to operate the button-led combo 
+instead of RPi.GPIO to operate the button-LED combo 
 connected to the voicehat.
 
 Additionally, an extended button press 
